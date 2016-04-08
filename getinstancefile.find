@@ -1,0 +1,112 @@
+./list_util.class.php:        $a = $avpl->get_instance();
+./list_util.class.php:        $b = $bvpl->get_instance();
+./classes/event/submission_base.php:            $subinstance = $submission->get_instance();
+./classes/event/vpl_base.php:                    'objectid' => $vpl->get_instance()->id,
+./vpl_submission_CE.class.php:        $vpl_instance = $vpl->get_instance();
+./vpl_submission_CE.class.php:        if($vpl->get_instance()->jailservers>''){
+./vpl_submission_CE.class.php:            $data->jailservers .= "\n".$vpl->get_instance()->jailservers;
+./vpl_submission_CE.class.php:            $subinstance=$this->get_instance();
+./vpl_submission_CE.class.php:            $process_info=vpl_running_processes::get($this->get_instance()->userid);
+./vpl_submission_CE.class.php:        $instance = $this->get_instance();
+./vpl_submission_CE.class.php:                if($this->vpl->get_instance()->automaticgrading){
+./vpl_submission_CE.class.php:        $process_info=vpl_running_processes::get($this->get_instance()->userid);
+./vpl_submission_CE.class.php:        vpl_running_processes::delete($this->get_instance()->userid);
+./views/previoussubmissionslist.php:        'objectid' => $vpl->get_instance()->id,
+./views/downloadallsubmissions.php:    $name = $vpl->get_instance()->name;
+./views/activityworkinggraph.php:$instance = $vpl->get_instance();
+./views/checkjailservers.php:$servers = vpl_jailserver_manager::check_servers($vpl->get_instance()->jailservers);
+./views/downloadsubmission.php:    if($subinstance->vpl != $vpl->get_instance()->id){
+./views/downloadsubmission.php:    if($vpl->get_instance()->id != $subinstance->vpl){
+./views/submissionslist.php:        $adata = $submissiona->get_instance()->$field;
+./views/submissionslist.php:        $bdata = $submissionb->get_instance()->$field;
+./views/submissionslist.php:        $subinstance = $submission->get_instance();
+./views/submissionslist.php:if(($gradeable || $vpl->get_instance()->evaluate) && $subselection != 'notgraded' ){
+./vpl.class.php:    function get_instance(){
+./vpl.class.php:        $instance = $this->get_instance();
+./vpl.class.php:            return format_module_intro(VPL,$this->get_instance(),
+./vpl.class.php:        $submissiondata->vpl = $this->get_instance()->id;
+./vpl.class.php:        $id=$this->get_instance()->id;
+./vpl.class.php:        $parms = array($this->get_instance()->id);
+./vpl.class.php:        $instance = $this->get_instance();
+./vpl.class.php:                    $this->get_instance()->worktype==1;
+./vpl.class.php:            if($this->get_instance()->grade !=0){ //If 0 then NO GRADE
+./vpl.class.php:                            $this->get_instance()->id,$userid);
+./vpl.class.php:        $PAGE->set_cm($this->get_course_module(),$this->get_course(),$this->get_instance());
+./forms/submissionview.php:    $instance = $vpl->get_instance();
+./forms/submissionview.php:    if($subinstance!=null && $subinstance->vpl != $vpl->get_instance()->id){
+./forms/submissionview.php:    if($vpl->get_instance()->id != $subinstance->vpl){
+./forms/executionlimits.php:        $instance = $this->vpl->get_instance();
+./forms/executionlimits.php:        $instance = $vpl->get_instance();
+./forms/evaluation.php:    && $vpl->get_instance()->evaluate){//Evaluate own submission
+./forms/evaluation.php:$instance = $vpl->get_instance();
+./forms/requiredfiles.php:$instance = $vpl->get_instance();
+./forms/edit.php:$instance= $vpl->get_instance();
+./forms/submission.php:    if($vpl->get_instance()->restrictededitor){
+./forms/submission.php:$instance = $vpl->get_instance();
+./forms/testcasesfile.php:$instance = $vpl->get_instance();
+./forms/edit.class.php:        $example = $vpl->get_instance()->example;
+./forms/edit.class.php:        $example = $vpl->get_instance()->example;
+./forms/grade_form.php:        $vplinstance = $this->vpl->get_instance();
+./forms/grade_form.php:        $vpl_instance = $this->vpl->get_instance();
+./forms/executionoptions.php:        $instance=$this->vpl->get_instance();
+./forms/executionoptions.php:        $instance = $vpl->get_instance();
+./forms/variations.php:$vplid= $vpl->get_instance()->id;
+./forms/variations.php:    $vplinstmod = clone $vpl->get_instance();
+./forms/gradesubmission.php:if($vpl->get_instance()->id != $subinstance->vpl){
+./forms/gradesubmission.php:                    $jscript .='VPL.updatesublist('.$submission->get_instance()->id.',';
+./forms/gradesubmission.php:            $gradedon = userdate($submission->get_instance()->dategraded);
+./forms/gradesubmission.php:            $jscript .='VPL.updatesublist('.$submission->get_instance()->id.',';
+./forms/gradesubmission.php:                $jscript .='VPL.go_next(\''.$submission->get_instance()->id.'\',\''.addslashes($url).'\');';
+./forms/gradesubmission.php:                    $vpl->get_instance()->id, $userid);
+./forms/submission_form.php:        $instance = $this->vpl->get_instance();
+./forms/edit.php~:$instance= $vpl->get_instance();
+./forms/local_jail_servers.php:        $instance = $vpl->get_instance();
+./forms/local_jail_servers.php:$data->jailservers = $vpl->get_instance()->jailservers;
+./forms/executionfiles.php:$instance = $vpl->get_instance();
+./forms/edit.json.php:    $instance = $vpl->get_instance();
+./forms/edit.json.php:        $outcome->response->servers=vpl_jailserver_manager::get_https_server_list($vpl->get_instance()->jailservers);
+./forms/savelog.php:$instance= $vpl->get_instance();
+./lib.php:        $vplid = $vpl->get_instance()->id;
+./lib.php:            $vplid = $vpl->get_instance()->id;
+./lib.php:    $instance=$vpl->get_instance();
+./lib.php:        $ret->name=$vpl->get_instance()->name.' '.get_string('example',VPL);
+./lib.php:    $example = $vpl->get_instance()->example;
+./lib.php:    if($submit_able    && !$example && !$vpl->get_instance()->restrictededitor){
+./lib.php:            $instance = $vpl->get_instance();
+./lib.php:                $instance = $vpl->get_instance();
+./mod_form.php:                $vpl->get_instance()->visiblegrade = ($vpl->get_grade_info()->hidden)?0:1;
+./mod_form.php:                $vpl->get_instance()->visiblegrade = false;
+./mod_form.php:            $this->set_data($vpl->get_instance());
+./vpl_submission_CE.class.php~:        $vpl_instance = $vpl->get_instance();
+./vpl_submission_CE.class.php~:        if($vpl->get_instance()->jailservers>''){
+./vpl_submission_CE.class.php~:            $data->jailservers .= "\n".$vpl->get_instance()->jailservers;
+./vpl_submission_CE.class.php~:            $subinstance=$this->get_instance();
+./vpl_submission_CE.class.php~:            $process_info=vpl_running_processes::get($this->get_instance()->userid);
+./vpl_submission_CE.class.php~:        $instance = $this->get_instance();
+./vpl_submission_CE.class.php~:                if($this->vpl->get_instance()->automaticgrading){
+./vpl_submission_CE.class.php~:        $process_info=vpl_running_processes::get($this->get_instance()->userid);
+./vpl_submission_CE.class.php~:        vpl_running_processes::delete($this->get_instance()->userid);
+./externallib.php:        $instance = $vpl->get_instance();
+./externallib.php:        $instance = $vpl->get_instance();
+./externallib.php:        if ($CE && $vpl->get_instance()->evaluate) {
+./externallib.php:        $instance = $vpl->get_instance();
+./externallib.php:        $instance = $vpl->get_instance();
+./vpl_submission.class.php:    function get_instance(){
+./vpl_submission.class.php:        $vplinstance=$this->vpl->get_instance();
+./vpl_submission.class.php:            $this->vpl->get_instance()->id,0,$grades,$itemdetails) != GRADE_UPDATE_OK){
+./vpl_submission.class.php:                $this->vpl->get_instance()->id, $userid);
+./vpl_submission.class.php:                        $this->vpl->get_instance()->id,$userid,$outcomes);
+./vpl_submission.class.php:                $this->vpl->get_instance()->id,0,$grades) != GRADE_UPDATE_OK){
+./vpl_submission.class.php:                $this->vpl->get_instance()->id, $userid);
+./vpl_submission.class.php:                        $this->vpl->get_instance()->id,$userid,$outcomes);
+./vpl_submission.class.php:            $vplinstance = $this->vpl->get_instance();
+./vpl_submission.class.php:                $this->vpl->get_instance()->id, $this->instance->userid);
+./vpl_submission.class.php:        if($this->vpl->get_instance()->evaluate
+./vpl_submission.class.php:            if(strlen($proposed_grade) && $this->vpl->get_instance()->grade){
+./index.php:    $instance = $vpl->get_instance();
+./index.php:    $instance = $vpl->get_instance();
+./index.php:    $instance = $vpl->get_instance();
+./similarity/similarity_form.class.php:        $mform->addElement('select', 'scanactivity', get_string('scanactivity',VPL),$this->list_activities($this->vpl->get_instance()->id));
+./similarity/similarity_base.class.php:        $id = $vpl->get_instance()->id;
+./similarity/user_similarity.php:        'objectid' => $vpl->get_instance()->id,
+./vpl_example_CE.class.php:        $fake->vpl = $vpl->get_instance()->id;
